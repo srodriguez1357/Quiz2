@@ -14,5 +14,10 @@
 
 
 <ion-content padding>
-
+    <ion-item>
+        <ion-label>Television</ion-label>
+        <ion-toggle [(ngModel)] = "tv" checked="false"></ion-toggle> 
+      </ion-item> 
+      <button ion-button color="light" *ngIf = "tv">Channel_1</button>
+      <button ion-button color="default" *ngIf = "tv">Channel_2</button>
 </ion-content>

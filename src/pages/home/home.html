@@ -7,23 +7,62 @@
 </ion-header>
 
 <ion-content padding>
-<ion-grid>
-  <ion-row>
-    <ion-col>
-        <button ion-button (click)="Bocina()">Bocina</button>
-</ion-col>
-<ion-col>
-    <button ion-button>TV</button>
-</ion-col>
-</ion-row>
-<ion-row>
-    <ion-col>
-        <button ion-button>Smartphone</button>
-</ion-col>
-<ion-col>
-    <button ion-button>Lampara</button>
-</ion-col>
-</ion-row>
-
-</ion-grid>
+    <ion-row>
+        <ion-col> 
+        <ion-card (click)="Bocina()">
+      
+          <ion-card-header>
+            Bocina
+          </ion-card-header>
+        
+          <ion-card-content>
+            <!-- Add card content here! -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+        <ion-col>
+        <ion-card (click)="Tv()">
+      
+          <ion-card-header>
+            TV
+          </ion-card-header>
+        
+          <ion-card-content>
+            <!-- Add card content here! -->
+          </ion-card-content>
+        
+        </ion-card>
+      </ion-col>
+      </ion-row>
+      
+       <ion-row>
+      
+      <ion-col>
+        <ion-card (click)="Smartphone()">
+          <ion-card-header>
+            Smartphone
+          </ion-card-header>
+        
+          <ion-card-content>
+            <!-- Add card content here! -->
+          </ion-card-content>
+        
+        </ion-card>
+      </ion-col>
+      
+      <ion-col>
+          <ion-card (click)="Lampara()">
+        
+            <ion-card-header>
+              Lampara
+            </ion-card-header>
+          
+            <ion-card-content>
+              <!-- Add card content here! -->
+            </ion-card-content>
+          
+          </ion-card>
+        </ion-col>
+      </ion-row>
 </ion-content>
